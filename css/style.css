@@ -164,8 +164,9 @@ h3 {
     width: 50em;
 }
 
-.download_button {
+.button_container {
    text-align: center;
+   position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
