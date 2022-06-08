@@ -171,3 +171,15 @@ h3 {
    align-items: center;
    justify-content: center;
 }
+
+#profile_pic{
+    display: flex;
+    position : relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile_pic img {
+    height: auto;
+    width: 200px;
+}
