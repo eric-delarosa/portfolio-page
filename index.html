@@ -14,29 +14,23 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header id="header">
-        <div class="content">
-            <div id="logo"><a href=""> ERIC DE LA ROSA </a></div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#home" class="active" title="Next Section">Home</a></li>
-                    <li><a href="#portfolio" title="Next Section">Portfolio</a></li>
-                    <li><a href="#resume" title="Next Section">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <nav>
+        <h1>ERIC DE LA ROSA</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
 
     <!-- Hero Section -->
-    <div id="home">
-        <div class="content">
-            <h1>Eric De La Rosa</h1>
-            <h2>Software Engineer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odit sequi laborum provident, culpa minima facilis assumenda, debitis cupiditate distinctio exercitationem beatae corrupti quod. Magni ullam consequatur quia debitis reprehenderit.</p>
-        </div>
-    </div>
+    
     <!-- More About -->
-
 
     <!-- Skills Section -->
 
@@ -94,6 +88,16 @@
 
     <!-- Website Scripts -->
     <script src="./assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
 </body>
 </html>

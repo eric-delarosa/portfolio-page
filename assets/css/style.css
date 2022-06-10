@@ -1,185 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root{
+    --font-family: "Roboto", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+/* Variables END */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-h1 {
-    font-weight: normal;
-    font-size: 55px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-weight: normal;
-    font-size: 40px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    font-weight: normal;
-    font-size: 16px;
-    text-align: center;
-    margin: 5px 0;
-    padding: 0;
-    z-index: 1;
-    position: relative;
-}
-
-.center {
-    margin: 0 auto;
-}
-
-.content {
-    margin: 0 auto;
-    width: 960px;
-}
-
-.clear {
-    clear: both;
-}
-
-#header {
-    width: 100%;
-    background-color: rgba(54, 59, 59, 0.80);
-    height: 80px;
-    position: fixed;margin-top: 30px;
-}
-
-#nav {
-    width: 410px;
-    float: right;
-    margin: 20px;
-}
-#logo a {
-    color: #fff;
-    text-decoration: none;
-    float: left;
-    font-size: 30px;
-    margin-top: 20px;
-    color: #fff;
-    font-weight: bold;
-}
-
-#nav ul {
-    list-style: none;
-    display: block;
-    margin: 0 auto;
-    list-style: none;
-}
-
-#nav li {
-    margin-top: 9px;
-    float: left;
-    padding-left: 21px;
-}
-
-#nav li a {
-    color: #fff;
-    opacity: 0.6;
-    font-size: 16px;
-    text-decoration: none;
-}
-#nav li a.active {
-    color: #fff;
-    opacity: 1;
-    border-bottom: 2px solid #fff;
-}
-#nav li a:hover {
-    color: #fff;
-    opacity: 1;
-}
-
-#home, #portfolio {
-    width: 100%;
-}
-
-#home {
-    background:url(../img/coding-04.jpg) 50% 0 no-repeat fixed;
-    color: #fff;
-    height: 600px;
-    margin: 0;
-    padding: 200px 0 260px 0;
-    background-size: cover;
-}
-
-#portfolio {
-    background-color: #fff;
-    color: #333333;
-    height: 300px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 200px 0;
-}
-
-#resume {
-    background: url(../img/coding-04.jpg) 50% 0 no-repeat fixed;
-    color: #fff;
-    height: 1200px;
-    padding: 170px 0 0 0;
-    background-size: cover;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 3s;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px;
-}
-
-.card:hover {
-    /* On mouse hover, add deeper shadows */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container{
-    /* Add some padding inside the card container */
-    padding: 2px 16px;
-}
-
-.card img{
-    width: 200px;
-    height: auto;
-}
-
-.links img {
-    width: 40px;
-    height: auto;
-}
-
-#resume_view {
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#resume_view img {
-    width: 50em;
-}
-
-.button_container {
-   text-align: center;
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-#profile_pic{
-    display: flex;
-    position : relative;
-    align-items: center;
-    justify-content: center;
-}
-
-#profile_pic img {
-    height: auto;
-    width: 200px;
+    font-family: var(--font-family);
 }
