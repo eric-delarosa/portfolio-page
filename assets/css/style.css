@@ -91,7 +91,7 @@ nav ul li {
 }
 
 .burger-menu {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -284,7 +284,7 @@ nav ul li {
 }
 
 .resume-link {
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .resume-container button:hover {
@@ -409,11 +409,12 @@ footer {
     /* Hamburger Menu */
     nav ul {
         position: fixed;
-        background-color: var(--bg-color);
+        background-color: var(--primary-color);
         flex-direction: column;
-        top: 86px;
-        left: 10%;
-        width: 80%;
+        top: 88px;
+        left: 0%;
+        width: 100%;
+        padding-bottom: 20px;
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
