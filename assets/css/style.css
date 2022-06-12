@@ -423,4 +423,89 @@ footer {
     nav ul.show {
         transform: translateX(0);
     }
+
+    /* Hero Section */
+    .hero {
+        margin-top: 0rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero img {
+        height: 22rem;
+        width: 30rem;
+    }
+
+    .bio {
+        margin-top: -1rem;
+        width: 20.5rem;
+    }
+
+    /* More About Me Section */
+    .more-about {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about h2 {
+        text-align: center;
+    }
+
+    .more-about p {
+        text-align: justify;
+    }
+
+    /* Skills */
+    .icon {
+        width: 5.875rem;
+        height: 5.25rem;
+    }
+
+    /* Projects */
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 20.875rem;
+    }
+
+    /* Resume */
+    .resume-container {
+        max-width: 15rem;
+        padding: 1rem;
+    }
+
+    .resume-container img {
+        display: none;
+    }
+
+    .resume-container button {
+        margin: 0;
+    }
+
+    /* Contact Form */
+    .contact-form-container {
+        max-width: 23.75rem;
+    }
+}
+
+/* Query for even smaller screens */
+@media screen and (max-width: 420px) {
+    .hero img {
+        height: 37.5rem;
+        width: 23rem;
+    }
+
+    .bio {
+        width: 18.3rem;
+    }
+
+    .project-container {
+        width: 17.875rem;
+    }
+
+    .contact-form-container {
+        max-width: 17.75rem;
+    }
 }
