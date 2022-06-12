@@ -16,8 +16,8 @@
     --primary-color: #142664;
     --secondary-color: #00E6B3;
     --tertiary-color: #FF2E93;
-    --primary-shadow: #af8b8b;
-    --secondary-shadow: #6973a1;
+    --primary-shadow: #8d8baf;
+    --secondary-shadow: #69a18e;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
@@ -42,11 +42,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 body {
@@ -112,8 +112,8 @@ nav ul li {
 }
 
 .hero img {
-    height: 30rem;
-    width: 37.5rem'
+    height: 37rem;
+    width: auto;
 }
 
 .bio {
