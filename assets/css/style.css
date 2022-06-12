@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
+/* 
+    blue color #142664
+    teal #00E6B3
+    pink #FF2E93
+*/
+
 /* Variables */
 :root{
     --font-family: "Roboto", sans-serif;
@@ -7,10 +13,11 @@
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #fcfcfc;
-    --primary-color: #4756df;
-    --secondary-color: #ff7235;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;
+    --primary-color: #142664;
+    --secondary-color: #00E6B3;
+    --tertiary-color: #FF2E93;
+    --primary-shadow: #af8b8b;
+    --secondary-shadow: #6973a1;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
@@ -56,22 +63,22 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     transition: var(--transition);
 }
 
 nav a:hover {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    color: var(--tertiary-color);
+    border-bottom: 2px solid var(--tertiary-color);
 }
 
 nav ul {
@@ -331,7 +338,7 @@ nav ul li {
 
 .input-field::placeholder {
     padding-left: 0.5rem;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 
@@ -348,8 +355,8 @@ nav ul li {
 }
 
 .submit-btn:hover {
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     cursor: pointer;
 }
 /* Contact END */
