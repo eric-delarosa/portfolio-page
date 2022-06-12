@@ -261,7 +261,7 @@ nav ul li {
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
+    padding: 20px 0;
     margin: 10px;
 }
 
@@ -328,10 +328,12 @@ nav ul li {
     outline: none;
 }
 
+
 .input-field::placeholder {
-    padding: 0.5rem;
+    padding-left: 0.5rem;
     color: var(--primary-color);
 }
+
 
 .submit-btn {
     width: 100%;
@@ -350,3 +352,20 @@ nav ul li {
     border: 2px solid var(--primary-color);
     cursor: pointer;
 }
+/* Contact END */
+
+/* Socials Styling */
+.socials {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.socicon {
+    width: 2rem;
+    height: 2rem;
+}
+/* Socials END */
+
