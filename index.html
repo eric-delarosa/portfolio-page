@@ -4,71 +4,288 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Eric De La Rosa</title>
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <title>Eric De La Rosa | Software Engineer</title>
 </head>
 <body>
-    <!-- HEADER START -->
-    <header id="header">
-        <div class="content">
-            <div id="logo"><a href=""> ERIC DE LA ROSA </a></div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#home" class="active" title="Next Section">Home</a></li>
-                    <li><a href="#portfolio" title="Next Section">Portfolio</a></li>
-                    <li><a href="#resume" title="Next Section">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Navbar -->
+    <nav>
+        <h1>ERIC DE LA ROSA</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
 
-    <!-- PAGES START -->
-    <div id="home">
-        <div class="content">
-            <h1>Eric De La Rosa</h1>
-            <h2>Software Engineer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odit sequi laborum provident, culpa minima facilis assumenda, debitis cupiditate distinctio exercitationem beatae corrupti quod. Magni ullam consequatur quia debitis reprehenderit.</p>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img 
+            src="./assets/img/cyborg-man-works-remotely-on-a-virtual-computer.png" 
+            alt="filler" 
+            loading="lazy" 
+            class="hero-img">
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Sed, itaque? Vitae nemo laudantium rerum modi 
+                voluptatem corporis sequi a deleniti provident praesentium 
+                inventore nostrum, est nesciunt nobis dolorum similique neque.
+            </p>
         </div>
-    </div>
-    <div id="portfolio">
-        <div class="content">
-            <div class="card_list">
-                <h3>Projects</h3>
-                <div class="card" id="proj1">
-                    <img src="./img/coding-06.jpg" alt="Project Image">
-                    <div class="container">
-                        <h4>Project Name</h4>
-                        <p>Project Description</p>
-                        <div class="links">
-                            <a href=""><img src="./img/gitlab-logo-500.png" alt="Source"></a>
-                            <a href=""><img src="" alt="Live"></a>
-                        </div>
-                    </div>
+    </section>
+    
+    <!-- More About -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Esse laboriosam illum consectetur a quis maiores? 
+            In, maxime consequuntur quis illo minima ipsa culpa ex, 
+            omnis, tenetur fugit suscipit similique quo!
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Nulla sunt recusandae porro ex architecto neque harum fuga sed sint ipsam, 
+            dolore repellendus et magni, dicta a! Error dolor cum veniam!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sit earum praesentium, totam commodi dolorum assumenda, 
+            neque a vero officiis mollitia architecto. 
+            Quae labore quidem quaerat distinctio blanditiis explicabo adipisci temporibus!
+        </p>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img 
+                    src="./assets/icons/icons8-html-5.svg" 
+                    alt="HTML5" 
+                    loading="lazy" 
+                    class="icon icon-card"
+                />
+                <img 
+                    src="./assets/icons/icons8-css3.svg" 
+                    alt="CSS3" 
+                    loading="lazy" 
+                    class="icon icon-card"
+                />
+                <img 
+                    src="./assets/icons/icons8-javascript-50.svg" 
+                    alt="javascript" 
+                    loading="lazy" 
+                    class="icon icon-card"
+                />
+            </div>
+            <div class="second-set animate__animated animate__pulse">
+                <img 
+                    src="./assets/icons/icons8-python-50.svg" 
+                    alt="Python" 
+                    loading="lazy" 
+                    class="icon icon-card"
+                />
+                <img 
+                    src="./assets/icons/icons8-java-50.svg" 
+                    alt="Java" 
+                    loading="lazy" 
+                    class="icon icon-card"
+                />
+                <img 
+                    src="./assets/icons/icons8-git-50.svg" 
+                    alt="Git" 
+                    loading="lazy" 
+                    class="icon icon-card"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img 
+                    src="./python-grader-screenshot.png" 
+                    alt="Python Grader Screenshot" 
+                    loading="lazy" 
+                    class="project-pic"
+                />
+                <h3 class="project-title">Python Exam Grader</h3>
+                <p class="project-details">
+                    A platform for instructors to create questions and exams for teaching Python that automatically grades a student’s python code. (PHP, Python, HTML, CSS, JavaScript)	
+                </p>
+                <a href="https://afsaccess4.njit.edu/~abh7/login.html" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img 
+                    src="./assets/img/coding-05.jpg" 
+                    alt="" 
+                    loading="lazy" 
+                    class="project-pic"
+                />
+                <h3 class="project-title">Project Title</h3>
+                <p class="project-details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugit aliquid cum. Quas distinctio omnis placeat eos illum! Et exercitationem dolore eligendi beatae ea earum ad voluptates eveniet quaerat vel?
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img 
+                    src="./assets/img/coding-06.jpg" 
+                    alt="" 
+                    loading="lazy" 
+                    class="project-pic"
+                />
+                <h3 class="project-title">Project Title</h3>
+                <p class="project-details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugit aliquid cum. Quas distinctio omnis placeat eos illum! Et exercitationem dolore eligendi beatae ea earum ad voluptates eveniet quaerat vel?
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->   
+    <section class="resume" id="resume">
+        <h2 class="resume-title">My Resume</h2>
+            <div class="content-container">
+                <div class="resume-container resume-card">
+                    <img
+                        src="./assets/img/Eric-Delarosa-1.png"
+                        alt="My Resume"
+                        loading="lazy"
+                        class="resume-pic"
+                    />
+                    <button class="download-button">
+                        <a href="./assets/media/Eric-Delarosa.pdf" download="Eric_De_La_Rosa.pdf" class="resume-link">Download PDF</a>
+                    </button>
                 </div>
-                <div class="card" id="proj2">
-                    <img src="./img/coding-05.jpg" alt="Project Image">
-                    <div class="container">
-                        <h4>Project Name</h4>
-                        <p>Project Description</p>
-                        <div class="links">
-                            <a href=""><img src="./img/GitHub-Mark-64px.png" alt="Source"></a>
-                            <a href=""><img src="" alt="Live"></a>
-                        </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mdobjlnq" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input 
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Enter Your Name"
+                            class="input-field"
+                            required
+                        />
                     </div>
-                </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="sender-email" 
+                            placeholder="Enter Your Email"
+                            class="input-field"
+                            required
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea 
+                            name="message" 
+                            id="message" 
+                            cols="60" 
+                            rows="10"
+                            placeholder="Enter Your Message"
+                            class="input-field"
+                            required
+                        ></textarea>
+                    </div>
+                    <input 
+                        type="submit" 
+                        value="Submit" 
+                        id="submit-btn" 
+                        class="submit-btn"
+                    />
+                </form>
             </div>
         </div>
+    </section>
+
+    <!-- Social Accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/eric-de-la-rosa-630270206/" target="_blank">
+            <img 
+                src="./assets/icons/icons8-linkedin-circled.gif" 
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+            />
+        </a>
+        <a href="https://github.com/eric-delarosa" target="_blank">
+            <img 
+                src="./assets/icons/icons8-github.gif" 
+                alt="Github"
+                loading="lazy"
+                class="socicon"
+            />
+        </a>
     </div>
-    <div id="resume">
-        <div class="content">
-            <h3>Resume</h3>
-            <div id="resume_view">
-                <img src="./img/Eric Resume 4-21-22-1.png" alt="Resume Printout">
-            </div>
-            <div class="button_container">
-                <button><a href="./media/Eric Resume 4-21-22.pdf" download="Eric_De_La_Rosa.pdf">Download Resume PDF</a></button>
-            </div>
-        </div>
-    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up">
+        <img 
+            src="./assets/icons/icons8-upward-arrow.gif" 
+            alt="scroll-up" 
+            class="socicon up-arrow"
+        />
+    </i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2022</p>
+        <p class="copy">
+            Built by
+            <a href="https://github.com/eric-delarosa" target="_blank">Eric De La Rosa</a>
+        </p>
+    </footer>
+
+    <!-- Website Scripts -->
+    <script src="./assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
 </body>
 </html>
